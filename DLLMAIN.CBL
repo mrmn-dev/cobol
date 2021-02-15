@@ -85,10 +85,10 @@ CBL LIB,QUOTE,TEST(SYM)
            STOP RUN.
 		   
            DLL-SUBX-CALL.                                
-		       SET PARM-DATA-PTR TO ADDRESS OF TESTDATA. 
-		       MOVE 500 TO PARM-DATA-LTH.                
-		       SET INSERT-FRONT TO TRUE.                 
-		       CALL 'DLLSUBX' USING DLL-CONTROL.         
-		   EXIT.                                     
+	       SET PARM-DATA-PTR TO ADDRESS OF TESTDATA. 
+	       MOVE 500 TO PARM-DATA-LTH.                
+	       SET INSERT-FRONT TO TRUE.                 
+	       CALL 'DLLSUBX' USING DLL-CONTROL.         
+	   EXIT.                                     
 		   										
-		   EXIT PROGRAM.
+           EXIT PROGRAM.
