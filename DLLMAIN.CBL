@@ -83,3 +83,12 @@ CBL LIB,QUOTE,TEST(SYM)
            DISPLAY 'DLL-NODE-COUNT: ' DLL-NODE-COUNT.
       *
            STOP RUN.
+		   
+		   DLL-SUBX-CALL.                                
+			   SET PARM-DATA-PTR TO ADDRESS OF TESTDATA. 
+		       MOVE 500 TO PARM-DATA-LTH.                
+		       SET INSERT-FRONT TO TRUE.                 
+		       CALL 'DLLSUBX' USING DLL-CONTROL.         
+		   EXIT.                                     
+		   										
+		   EXIT PROGRAM.
